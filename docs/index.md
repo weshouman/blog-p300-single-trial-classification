@@ -9,5 +9,4 @@ This documentation discusses the paper [`Nader N. Nashed, Seif Eldawlatly and Ga
 - [Introduction](introduction.md)
 - [Methodology](methodology.md)
 - [Results](results.md)
-- [Conclusion](conclusion.md)
 - [References](references.md)
