@@ -18,3 +18,13 @@ Following are references either used in this documentation or include suplementa
 [12]: [Braingizer: A Brain-Controlled Wheelchair](http://braingizer.blogspot.com/2014/07/braingizer-book.html)  
 [13]: [IEEE Middle East Conference on Biomedical Engineering: Nader N. Nashed, Seif Eldawlatly and Gamal M Aly: A deep learning approach to single-trial classification for P300 spellers](https://ieeexplore.ieee.org/document/8402397)  
 [14]: [Wikipedia: Artificial Neural Network](https://en.wikipedia.org/wiki/Artificial_neural_network)  
+[15]: [nypost: Scientists use human neurons to grow 3-D brain tissues](https://www.bmseed.com/stretchable-electrodes-for-brain-implants)  
+[16]: [zuniv: physiology book](https://www.zuniv.net/physiology/book/)  
+[17]: [research gate: Sample EEG dataset. Signals shows that the dataset is challenging due to different variations in the signals](https://www.researchgate.net/figure/Sample-EEG-dataset-Signals-shows-that-the-dataset-is-challenging-due-to-different_fig1_336228375)  
+[18]: [Wikipedia: P300](https://en.wikipedia.org/wiki/P300_(neuroscience)#P3a_and_P3b)  
+[19]: [Wikipedia: Parietal lobe](https://en.wikipedia.org/wiki/Parietal_lobe)  
+[20]: [Emotiv EPOC](https://www.emotiv.com/epoc/)  
+[21]: [Brain Products: Common Average Referencing](https://pressrelease.brainproducts.com/referencing/#:~:text=When%20applying%20the%20so-called%20Common%20Average%20Reference%2C%20the,and%20subtracting%20the%20resulting%20signal%20from%20each%20channel.)  
+[22]: [Medium: Moving Average Filter](https://medium.com/blueeast/how-to-use-moving-average-filter-to-counter-noisy-data-signal-5b530294a12e)  
+[23]: [Wikipedia: PCA](https://en.wikipedia.org/wiki/Principal_component_analysis)  
+
