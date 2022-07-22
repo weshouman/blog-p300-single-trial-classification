@@ -29,7 +29,7 @@ In general, the average accuracy for the previous approach for the 14 channels a
 
 ## Activation Function
 
-As mentioned in the [feature extraction section](methodology.md#autoencoders), multiple activation functions could be used, following are the results of using those functions:
+As mentioned in the [feature extraction section](methodology.md#feature-extraction), multiple activation functions could be used, following are the results of using those functions:
 
 Linear activation exceled over the Logistic Sigmoid activation (by `~16%`) and over the Positive Saturating Linear function (by `~11%`)
 
@@ -39,7 +39,7 @@ Linear activation exceled over the Logistic Sigmoid activation (by `~16%`) and o
 
 ## Hidden Layer Size of Stacked Autoencoders
 
-As mentioned in the [feature extraction section](methodology.md#autoencoders), an autoencoder could have stacked hidden layers to reach the bottleneck, following are the results of varying the number of hidden layers:
+As mentioned in the [feature extraction section](methodology.md#feature-extraction), an autoencoder could have stacked hidden layers to reach the bottleneck, following are the results of varying the number of hidden layers:
 
 - Gradually decreasing number of hidden layers had an accuracy of `~54%`
 - Gradually decreasing number of hidden layers after an initial increase had an accuracy of `~43%`
