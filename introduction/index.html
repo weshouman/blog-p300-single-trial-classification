@@ -236,22 +236,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#electrode-placement" class="md-nav__link">
-    Electrode Placement
+  <a href="#how-to-place-the-electrodes" class="md-nav__link">
+    How To Place The Electrodes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#p300-speller" class="md-nav__link">
-    P300 Speller
+  <a href="#which-brain-activity-to-consider" class="md-nav__link">
+    Which brain activity to consider
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#learning-techniques" class="md-nav__link">
-    Learning Techniques
+  <a href="#which-computer-program-to-use" class="md-nav__link">
+    Which computer program to use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-learning-technique-to-use" class="md-nav__link">
+    Which Learning Technique To Use
   </a>
   
 </li>
@@ -336,22 +343,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#electrode-placement" class="md-nav__link">
-    Electrode Placement
+  <a href="#how-to-place-the-electrodes" class="md-nav__link">
+    How To Place The Electrodes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#p300-speller" class="md-nav__link">
-    P300 Speller
+  <a href="#which-brain-activity-to-consider" class="md-nav__link">
+    Which brain activity to consider
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#learning-techniques" class="md-nav__link">
-    Learning Techniques
+  <a href="#which-computer-program-to-use" class="md-nav__link">
+    Which computer program to use
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#which-learning-technique-to-use" class="md-nav__link">
+    Which Learning Technique To Use
   </a>
   
 </li>
@@ -380,17 +394,40 @@
 <p class="admonition-title">Goal of the paper</p>
 <p>The goal of the paper is to investigate the deep learning approach in achieving a higher accuracy while communicating the desired characters with the P300 speller from as little as a single trial.</p>
 </div>
-<p>Brain Computer Interface (BCI) technology could enable communication with individuals with server motor disabilities, by communicating directly with the brain signals.  </p>
-<p>To achieve BCI, one needs to determine:</p>
+<figure>
+<p><img alt="View of a brain" src="https://nypost.com/wp-content/uploads/sites/2/2018/10/brain-made-from-human-neurons.jpg" width="400" />
+  </p>
+<figcaption><a href="https://nypost.com/2018/10/22/scientists-use-human-neurons-to-grow-3d-brain-tissue/">A Human Brain [15]</a></figcaption>
+</figure>
+<p>Brain Computer Interface (BCI) is the interface made between a human's brain and a computer so that it's possible to get data directly from the brain into the computer or even further, the vice versa.</p>
+<p>Such technology could enable communication with individuals with severe motor disabilities, by communicating directly with the brain signals, for example, if a subject is want to control a robotic arm or even connected to a prosthetic arm, a signal could be taken directly from the brain to control this arm, or even if the subject is not able to talk, we could figure out what he want to say by directly communicating with the brain.  </p>
+<p>This actually happens due to the fact that the brain functions by the communication between different neurons, those neurons send to each other messages in the form of voltage spikes, either high or low.</p>
+<figure>
+<p><img alt="View of a neuron" src="https://s-media-cache-ak0.pinimg.com/originals/77/59/c9/7759c998eb076f257c289e1f1fec9040.jpg" width="300" />
+  </p>
+<figcaption><a href="https://www.zuniv.net/physiology/book/">Neuron Structure [16]</a></figcaption>
+</figure>
+<p>Theoritcally, if we have access to each neuron's output we can record and regenerate the whole interactions needed for the brain to think about/plan and take an action. However, this task is not that simple taking into consideration a human brain has around <code>10^11</code> neurons, <em>requiring <code>10^11</code> sensors</em>.</p>
+<p>Thus, the 2 solutions we are left with are:  </p>
 <ol>
-<li>How the electrods are to be placed</li>
-<li>Which brain activity to be considered</li>
+<li>Using the current knowledge we have about the human brain to narrow down to specific neurons to measure.</li>
+<li>Lowering the spatial resolution by using sensors.  </li>
+</ol>
+<p>In general, this is not the only decision that needs to be taken to achieve the Brain Computer Interface, there are more information that we need to gather, and that could be managed by answering the following 4 questions:</p>
+<ol>
+<li>How to place the electrodes</li>
+<li>Which brain activity to consider</li>
 <li>Which computer program to use</li>
 <li>Which learning technique to use</li>
 </ol>
-<p>In this introduction we clarify the context that this paper working on.</p>
-<h2 id="electrode-placement">Electrode Placement<a class="headerlink" href="#electrode-placement" title="Permanent link">&para;</a></h2>
-<p>To make a BCI, one needs to place electrodes onto the individual's head, the are 3 ways to achieve such placement: non-invasive, semi-invasive and invasive, the following figure and table illustrate that further:</p>
+<p>Next, we clarify the context that this paper is working on by answering those 4 questions.</p>
+<hr />
+<h2 id="how-to-place-the-electrodes">How To Place The Electrodes<a class="headerlink" href="#how-to-place-the-electrodes" title="Permanent link">&para;</a></h2>
+<p>In the BCI field the sensors are called electrodes, and they read the voltage of a specific area, the smaller the number of neurons within this area the higher the spatial resolution of such method.</p>
+<p>Those electrodes are placed onto the individual's head.
+However, the more we need to increase the spatial resolution the further into the brain we need to place the electrodes, which implies we wouldn't be only putting the electrode on the subject's head, but we'd also need to be invasive and inject the electrode in the subject's head to be as close as possible to a specific neuron and reach the maximum spatial resolution.</p>
+<p>Luckily, with the current knowledge available about the brain, we can get meaningful information without a surgery, but of course with less spatial resolution. </p>
+<p>In summary, there are 3 ways to achieve such placement: non-invasive, semi-invasive and invasive, the following figure and table illustrate that further:</p>
 <figure>
 <p><img alt="Different BCI electrodes" src="https://images.squarespace-cdn.com/content/v1/58fd278d6a49633370c4ebbe/1493702709246-R1PH4JYCON3WPUNP7ZZM/image-asset.png" width="200" />
   </p>
@@ -432,17 +469,40 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Sometimes both semi-invasive and invasive are called invasive, as in any case they both require a surgery.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Paper Approach</p>
 <p>This paper investigates the usage of EEG based activities.</p>
 </div>
-<h2 id="p300-speller">P300 Speller<a class="headerlink" href="#p300-speller" title="Permanent link">&para;</a></h2>
+<h2 id="which-brain-activity-to-consider">Which brain activity to consider<a class="headerlink" href="#which-brain-activity-to-consider" title="Permanent link">&para;</a></h2>
+<p>There are many signals/activities that we could measure from the brain and consider for the BCI, Alpha, Beta, P300 ... etc.</p>
+<figure>
+<p><img alt="P300 activities on different subjects" src="../media/p300_different_subjects.png" width="300" />
+  </p>
+<figcaption><a href="https://en.wikipedia.org/wiki/P300_(neuroscience)#P3a_and_P3b">P300 activities on different subjects [18]</a></figcaption>
+</figure>
+<p>This paper discusses the P300 brain activity which is elicited ~300 milliseconds after the presentation of an infrequent stimulus (for example, a visual stimulus or an auditory stimulus). This brain activity can be measured with electrodes placed on the parietal lobe of the brain. And it's usually used because of it's reproducibility and clarity in the BCI applications.</p>
+<figure>
+<p><img alt="Parietal lobe" src="../media/parietal_lobe.png" width="300" />
+  </p>
+<figcaption><a href="https://en.wikipedia.org/wiki/Parietal_lobe">Parietal lobe [19]</a></figcaption>
+</figure>
+<p>It's also to be noted that, the p300 timing and voltage differs based on the subject age, the following figure shows how such difference occurs</p>
+<figure>
+<p><img alt="P300 activity over age" src="../media/p300_vs_age.png" width="300" />
+  </p>
+<figcaption><a href="https://en.wikipedia.org/wiki/P300_(neuroscience)#P3a_and_P3b">P300 activity over age [18]</a></figcaption>
+</figure>
+<h2 id="which-computer-program-to-use">Which computer program to use<a class="headerlink" href="#which-computer-program-to-use" title="Permanent link">&para;</a></h2>
+<p>Accordingly the program used for the interface is the P300 speller which works by showing the user a MxN matrix of the characters of interest (6x6 matrix for this paper) and flashing each row and column for K times (called K trials), for example if K is 1 (single trial) there will be 12 flashes (6 different row flashes and 6 different column flashes), K is 5 (5 trials) there will be 60 flashes (30 row flashes and 30 column flashes).  </p>
 <figure>
 <p><img alt="P300 speller" src="https://www.researchgate.net/publication/311359887/figure/fig2/AS:682065372643328@1539628465050/Stimulus-and-operating-principle-of-P300-speller-When-the-subject-counts-the-number-of.ppm" width="400" />
   </p>
 <figcaption><a href="https://www.researchgate.net/figure/Stimulus-and-operating-principle-of-P300-speller-When-the-subject-counts-the-number-of_fig2_311359887">Time diagram of a P300 speller [10]</a></figcaption>
 </figure>
-<p>The computer program used for the interface is a P300 speller which works by showing the user a MxN matrix of the characters of interest (6x6 matrix for this paper) and flashing each row and column for K times (called K trials), for example if K is 1 (single trial) there will be 12 flashes (6 different row flashes and 6 different column flashes), K is 5 (5 trials) there will be 60 flashes (30 row flashes and 30 column flashes).  </p>
 <p>The flashes occur randomly and have Interintisification Intervals (ISI) of 100 ms between them.  </p>
 <p>The user needs to focus on the character he wants to type each time, and once the screen flashes in front of him a brain activity shall evoke after 300 milliseconds which could be detected to figure out that the character the user is looking at is in the flashed row or column, 300 ms ago.  </p>
 <p>Increasing the number of trials, would increase the detection accuracy, however each extra trial involves extra 12 flashes. </p>
@@ -451,14 +511,20 @@
 <p>This paper utilizes the reads P300 brain activitiy, and uses the P300 speller as the software for interaction.<br />
 It also observes the effect of the deep learning approach on the decrease of the trials.</p>
 </div>
-<h2 id="learning-techniques">Learning Techniques<a class="headerlink" href="#learning-techniques" title="Permanent link">&para;</a></h2>
+<h2 id="which-learning-technique-to-use">Which Learning Technique To Use<a class="headerlink" href="#which-learning-technique-to-use" title="Permanent link">&para;</a></h2>
+<figure>
+<p><img alt="Sample EEG data" src="../media/eeg_data.jpg" width="300" />
+  </p>
+<figcaption><a href="https://www.researchgate.net/figure/Sample-EEG-dataset-Signals-shows-that-the-dataset-is-challenging-due-to-different_fig1_336228375">Sample EEG data [17]</a></figcaption>
+</figure>
+<p>The data extracted from the brain is a voltage graph for each electrode, watching those graphs is like reading the 0's and 1's of different cores for a running operating system, what we can do though is to learn from those graphs, so that we could gather useful information from this high dimensionality data (considering each electrode a different dimension). Combining that with meaningful preprocessing filters we could reach great results.</p>
+<p>To learn from the brain activities both feature extraction and classification shall be utilized. There are multiple techniques for doing so.
+The classification problem in hand is considered a supervised learning one, as the classes are pre-known <code>{P300 and non-P300}</code>.</p>
 <figure>
 <p><img alt="Neural Network image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/1024px-Colored_neural_network.svg.png" width="200" />
   </p>
 <figcaption><a href="https://en.wikipedia.org/wiki/Artificial_neural_network">Artificial Neural Network [14]</a></figcaption>
 </figure>
-<p>To learn from the brain activities both feature extraction and classification shall be utilized. There are multiple techniques for doing so.
-The classification problem in hand is considered a supervised learning one, as the classes are pre-known <code>{P300 and non-P300}</code>.</p>
 <p>Different approaches could be considered to learn the model, for example Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), Independent Componant Analysis (ICA), autoencoders, Fisher's Linear Discriminant Classifier, Maximum Likelihood Discriminant Classifier KNN, etc.</p>
 <div class="admonition note">
 <p class="admonition-title">Paper Approach</p>
